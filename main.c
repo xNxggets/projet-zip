@@ -14,11 +14,11 @@ int main() {
     int nb_numeros = 5;
 
     printf("Jeu ZIP - Configuration\n");
-    printf("Taille de la grille (5 à 10, 0=5) : ");
+    printf("Entrez la taille de la grille souhaitee (entre 5 et 10 inclus) sinon 5 automatiquement : ");
     scanf("%d", &taille);
     if (taille < TAILLE_MIN || taille > TAILLE_MAX) taille = 5;
 
-    printf("Nombre de numéros (1 à 12, 0=5) : ");
+    printf("Nombre de numeros (entre 1 et 12 inclus) sinon 5 automatiquement : ");
     scanf("%d", &nb_numeros);
     if (nb_numeros < 1 || nb_numeros > NB_NUMEROS_MAX) nb_numeros = 5;
 
@@ -84,7 +84,7 @@ int main() {
         if (tout_visite) {
             effacer_console();
             afficher_grille(&grille, curseur, prochain_numero);
-            printf("\nBravo, vous avez gagné !\n");
+            printf("\nBravo, vous avez gagne !\n");
             break;
         }
     }

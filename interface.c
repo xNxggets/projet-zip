@@ -35,8 +35,8 @@ int lire_caractere() {
 }
 
 void afficher_grille(const Grille *g, Position curseur, int prochain_numero) {
-    printf("Jeu ZIP - Déplacements: z/s/q/d | e=sauvegarder | l=charger | x=quitter\n");
-    printf("Prochain numéro attendu : %d\n", prochain_numero);
+    printf("Jeu ZIP - Deplacements: z/s/q/d | e=sauvegarder | l=charger | x=quitter\n");
+    printf("Prochain numero attendu : %d\n", prochain_numero);
 
     for (int i = 0; i < g->lignes; ++i) {
         for (int j = 0; j < g->colonnes; ++j) {
